@@ -1,10 +1,31 @@
 import express, {} from 'express';
+import fs from "fs";
+import path from 'path';
+import { fileURLToPath } from 'url';
+// Manually define __dirname for ES Module
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const app = express();
-const port = 3000;
+app.use(express.json());
+const filePath = path.join(__dirname, "../db/todo.json");
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send('Welcome to todos app!!');
 });
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`);
+app.get('/todos', (req, res) => {
+    const data = fs.readFileSync(filePath, { encoding: "utf-8" });
+    console.log(data);
+    res.json(data);
 });
+app.post('/todos/create-todo', (req, res) => {
+    const { title, body } = req.body;
+    console.log(title, body);
+    res.send('Hello World..!!!!!');
+});
+export default app;
+/*
+**Basic File structure**
+-server file: server handling like : staring, closing, error handling of server.
+-app file: routing handling, middleware,, route related error.
+-app folder: app business logic handling like create, read, update, delete, databased related works.
+*/ 
 //# sourceMappingURL=app.js.map

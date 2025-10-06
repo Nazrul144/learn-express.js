@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Prisma",
+    "body": "Learning how to use Prisma ORM with Node.js and PostgreSQL.",
+    "createdAt": "10:20:03:424"
+  },
+  {
+    "title": "Next.js Integration",
+    "body": "Integrating Prisma with Next.js for server-side data fetching.",
+    "createdAt": "10:25:14:872"
+  },
+  {
+    "title": "Database Migration",
+    "body": "Running Prisma migrations to update the database schema.",
+    "createdAt": "10:32:41:109"
+  },
+  {
+    "title": "Prisma Studio",
+    "body": "Using Prisma Studio to view and manage database records visually.",
+    "createdAt": "10:37:54:982"
+  },
+  {
+    "title": "Seeding Data",
+    "body": "Creating a Prisma seed script to populate sample data automatically.",
+    "createdAt": "10:45:31:209"
+  },
+  {
+    "title": "Schema Modeling",
+    "body": "Defining models in Prisma schema to represent database tables.",
+    "createdAt": "10:51:03:512"
+  },
+  {
+    "title": "Relations",
+    "body": "Understanding one-to-many and many-to-many relations in Prisma.",
+    "createdAt": "11:03:14:734"
+  },
+  {
+    "title": "CRUD Operations",
+    "body": "Implementing Create, Read, Update, and Delete using Prisma Client.",
+    "createdAt": "11:09:56:273"
+  },
+  {
+    "title": "Error Handling",
+    "body": "Catching and managing database errors gracefully with Prisma.",
+    "createdAt": "11:15:23:832"
+  },
+  {
+    "title": "Deployment",
+    "body": "Deploying Prisma with production-ready PostgreSQL database.",
+    "createdAt": "11:20:41:659"
+  }
+]
